@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Puri's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile">
+            <div class="circle">
+                <img src="pics/profile.jpg" alt="Picture">
+            </div>
+            <div class="info">
+                <h1>Shubham Puri</h1>
+                <p class="subtitle">A bit about me</p>
+                <p class="about">I am a currently attending NYIT majoring in Computer Science. I have experience in technical 
+                    support and administrative tasks. I have also worked as an AI quality analyst and tech support. 
+                    With a strong background in data structures and programming.</p>
+            </div>
+        </div>
+        <div class="links">
+            <a href="_Shubham_P_CS_Resume.pdf">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="javascript:void(0)" onclick="toggleContact()">Contact</a>
+            <a href="http://www.linkedin.com/in/shubham-puri-90061b252" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Contact  Section  -->
+    <section id="contact-info" class="hidden">
+        <h2>Contact Information</h2>
+        <p>Address: 5814 Myrtle Ave 3R, Ridgewood Queens, NY 11385</p>
+        <p>Phone: (347) 280-4249</p>
+        <p>Email: <a href="mailto:spuri04@nyit.edu">spuri04@nyit.edu</a> | <a href="mailto:spur245@gmail.com">spur245@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shubham Puri. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript-->
+    <script>
+        function toggleContact() {
+            const contactInfo = document.getElementById("contact-info");
+            contactInfo.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
